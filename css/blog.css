@@ -85,9 +85,6 @@
   color: #92754c;
 }
 
-/* ===== MEDIA QUERIES ===== */
-
-/* Tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .articulo-blog {
     gap: 30px;
@@ -98,7 +95,6 @@
   }
 }
 
-/* Móviles */
 @media (max-width: 768px) {
   .cabecera-pagina h1 {
     font-size: 32px;
@@ -134,7 +130,6 @@
   }
 }
 
-/* Móviles pequeños */
 @media (max-width: 480px) {
   .cabecera-pagina h1 {
     font-size: 28px;

@@ -214,14 +214,12 @@ img {
   margin: 0 0 10px;
 }
 
-/* ===== FOOTER (PIE DE PÁGINA) ===== */
 .pie {
   background: #100f0e;
   color: #f8f5f0;
   padding: 60px 50px 30px;
 }
 
-/* Línea decorativa arriba del footer */
 .pie::before {
   content: "";
   display: block;
@@ -231,7 +229,6 @@ img {
   margin-bottom: 40px;
 }
 
-/* Contenedor principal del footer */
 .pie-contenido {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1.2fr;
@@ -240,7 +237,6 @@ img {
   align-items: start;
 }
 
-/* Sección del logo/eslogan */
 .pie-marca a {
   color: #f8f5f0;
   text-decoration: none;
@@ -257,7 +253,6 @@ img {
   line-height: 1.6;
 }
 
-/* Secciones de enlaces */
 .pie-seccion h3 {
   color: #c5a46d;
   font-size: 11px;
@@ -287,7 +282,6 @@ img {
   color: #f8f5f0;
 }
 
-/* Horarios y ubicación */
 .pie-horarios li {
   color: #b9b4ad;
   font-size: 13px;
@@ -302,7 +296,6 @@ img {
   margin: 0;
 }
 
-/* Sección de redes sociales */
 .pie-redes {
   margin-top: 30px;
   padding-top: 25px;
@@ -341,7 +334,6 @@ img {
   color: #f8f5f0;
 }
 
-/* Iconos de redes sociales */
 .icono-red {
   width: 20px;
   height: 20px;

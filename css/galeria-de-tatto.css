@@ -22,9 +22,6 @@
   margin-top: 34px;
 }
 
-/* ===== MEDIA QUERIES ===== */
-
-/* Tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .galeria figure {
     width: calc(50% - 11px);
@@ -39,7 +36,6 @@
   }
 }
 
-/* Móviles */
 @media (max-width: 768px) {
   .galeria {
     padding: 0 15px;
@@ -59,7 +55,6 @@
   }
 }
 
-/* Móviles pequeños */
 @media (max-width: 480px) {
   .galeria img {
     height: 220px;

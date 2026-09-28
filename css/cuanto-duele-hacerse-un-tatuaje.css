@@ -35,9 +35,6 @@
   width: 60%;
 }
 
-/* ===== MEDIA QUERIES ===== */
-
-/* Tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .dolor-contenido {
     gap: 30px;
@@ -48,7 +45,6 @@
   }
 }
 
-/* Móviles */
 @media (max-width: 768px) {
   .dolor-contenido {
     flex-direction: column;
@@ -65,7 +61,6 @@
   }
 }
 
-/* Móviles pequeños */
 @media (max-width: 480px) {
   .dolor-texto h2 {
     font-size: 22px;

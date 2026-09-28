@@ -63,9 +63,6 @@
   margin: 0;
 }
 
-/* ===== MEDIA QUERIES ===== */
-
-/* Tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .lista-consejos article > span {
     font-size: 20px;
@@ -73,7 +70,6 @@
   }
 }
 
-/* Móviles */
 @media (max-width: 768px) {
   .lista-consejos {
     padding: 0 15px;
@@ -95,7 +91,6 @@
   }
 }
 
-/* Móviles pequeños */
 @media (max-width: 480px) {
   .lista-consejos h2 {
     font-size: 18px;
