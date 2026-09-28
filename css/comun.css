@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #171513;
+  background: #f4f1eb;
+}
+
+img {
+  max-width: 100%;
+}
+
+.encabezado {
+  background: #100f0e;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.encabezado .marca a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.encabezado .marca span {
+  font-size: 10px;
+  color: #b8b1a8;
+  letter-spacing: 2px;
+}
+
+.barra {
+  background: #050505;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-top: 1px solid #1a1815;
+}
+
+.barra a {
+  color: #f8f7f5;
+  text-decoration: none;
+  padding: 18px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.barra a:hover {
+  color: #c5a46d;
+}
+
+.desplegable {
+  display: inline-block;
+  position: relative;
+}
+
+.desplegable summary {
+  color: #f8f7f5;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  list-style: none;
+  padding: 18px 16px;
+  transition: color 0.2s;
+}
+
+.desplegable summary:hover {
+  color: #c5a46d;
+}
+
+.desplegable summary::-webkit-details-marker {
+  display: none;
+}
+
+.desplegable summary::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-left: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #11100f;
+  min-width: 210px;
+  padding: 8px 0;
+  z-index: 100;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  text-align: left;
+}
+
+.sub-menu a {
+  display: block;
+  padding: 10px 18px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.desplegable:hover .sub-menu {
+  display: block;
+}
+
+.desplegable[open] .sub-menu {
+  display: block;
+}
+
+.sub-menu a:hover {
+  color: #c5a46d;
+  background: #211f1c;
+}
+
+.barra-cita {
+  color: #c5a46d !important;
+  border-bottom: 2px solid #c5a46d;
+  padding-bottom: 16px;
+}
+
+.pagina {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.sobre-titulo {
+  color: #92754c;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 0 10px;
+}
+
+/* ===== FOOTER (PIE DE PÁGINA) ===== */
+.pie {
+  background: #100f0e;
+  color: #f8f5f0;
+  padding: 60px 50px 30px;
+}
+
+/* Línea decorativa arriba del footer */
+.pie::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #c5a46d;
+  margin-bottom: 40px;
+}
+
+/* Contenedor principal del footer */
+.pie-contenido {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Sección del logo/eslogan */
+.pie-marca a {
+  color: #f8f5f0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.pie-marca p {
+  color: #b9b4ad;
+  font-size: 13px;
+  margin: 12px 0 0;
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+/* Secciones de enlaces */
+.pie-seccion h3 {
+  color: #c5a46d;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 15px;
+}
+
+.pie-seccion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pie-seccion li {
+  margin-bottom: 8px;
+}
+
+.pie-seccion a {
+  color: #b9b4ad;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.pie-seccion a:hover {
+  color: #f8f5f0;
+}
+
+/* Sección de redes sociales */
+.pie-redes {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #2a2825;
+}
+
+.pie-redes h3 {
+  color: #c5a46d;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 18px;
+}
+
+.pie-redes-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pie-redes-lista li {
+  margin-bottom: 10px;
+}
+
+.pie-redes-lista a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #b9b4ad;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.pie-redes-lista a:hover {
+  color: #f8f5f0;
+}
+
+/* Iconos de redes sociales */
+.icono-red {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Parte de abajo del footer */
+.pie-abajo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #2a2825;
+}
+
+.pie-abajo p {
+  color: #6b675f;
+  font-size: 12px;
+  margin: 0;
+}
+
+.pie-abajo a {
+  color: #c5a46d;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.pie-abajo a:hover {
+  color: #f8f5f0;
+}
+
+.boton-oscuro, .boton-claro {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #171513;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid #171513;
+  cursor: pointer;
+}
+
+.boton-oscuro:hover {
+  background: transparent;
+  color: #171513;
+}
+
+.enlace-flecha {
+  color: #171513;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px solid #c5a46d;
+  padding-bottom: 3px;
+}
+
+.enlace-flecha span {
+  color: #92754c;
+  margin-left: 8px;
+}

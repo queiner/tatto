@@ -1,0 +1,133 @@
+/* Cabecera de la página de agendar */
+.agenda .cabecera-pagina {
+  max-width: 680px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.agenda .cabecera-pagina h1 {
+  font-family: Georgia, serif;
+  font-size: 52px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.agenda .cabecera-pagina p {
+  color: #716d67;
+  font-size: 15px;
+  margin: 20px auto 0;
+}
+
+.agenda-columnas {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.formulario {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario label {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.formulario input, .formulario select, .formulario textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d2ccc1;
+  background: #fffdf9;
+  color: #171513;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.campos-par {
+  display: flex;
+  gap: 15px;
+}
+
+.campos-par > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario .boton-oscuro {
+  align-self: flex-start;
+  margin-top: 15px;
+}
+
+.solicitudes {
+  width: 45%;
+  padding: 25px;
+  background: #e9e4db;
+}
+
+.solicitudes h2 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.nota-agenda {
+  color: #716d67;
+  font-size: 13px;
+}
+
+.solicitudes ul {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista-vacia {
+  color: #716d67;
+  font-size: 13px;
+}
+
+.solicitud-item {
+  margin-top: 12px;
+  padding: 15px;
+  border: 1px solid #d2ccc1;
+  background: #f8f5ef;
+}
+
+.solicitud-item h3 {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 5px;
+}
+
+.solicitud-item p {
+  color: #716d67;
+  font-size: 12px;
+  margin: 3px 0;
+}
+
+/* Imagen decorativa en la página de agendar */
+.agenda-imagen {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.agenda-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

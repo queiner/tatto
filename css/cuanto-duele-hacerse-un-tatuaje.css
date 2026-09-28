@@ -1,0 +1,54 @@
+.dolor .cabecera-pagina {
+  max-width: 760px;
+}
+
+.dolor-contenido {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.mapa-dolor {
+  width: 40%;
+  margin: 0;
+  padding: 18px;
+  background: #fffaf3;
+}
+
+.mapa-dolor img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.mapa-dolor figcaption {
+  padding-top: 10px;
+  color: #716d67;
+  font-size: 11px;
+  text-align: center;
+}
+
+.dolor-texto {
+  width: 60%;
+}
+
+.dolor-texto h2, .dolor-texto h3 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+}
+
+.dolor-texto h2 {
+  font-size: 30px;
+  margin: 0 0 12px;
+}
+
+.dolor-texto h3 {
+  font-size: 20px;
+  margin: 25px 0 5px;
+}
+
+.dolor-texto p {
+  color: #716d67;
+  font-size: 14px;
+  margin: 0;
+}

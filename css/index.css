@@ -1,0 +1,256 @@
+.portada {
+  position: relative;
+  height: 600px;
+  background: #14110e;
+  overflow: hidden;
+}
+
+.portada-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.portada-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.portada::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(9,8,7,0.85) 0%, rgba(9,8,7,0.12) 76%);
+  z-index: 1;
+}
+
+.portada-contenido {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.portada-texto {
+  color: white;
+}
+
+.portada .sobre-titulo {
+  color: #e0c18c;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+
+.portada h1 {
+  font-family: Georgia, serif;
+  font-size: 72px;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 20px;
+}
+
+.bajada {
+  color: #e6e0d8;
+  font-size: 17px;
+  max-width: 500px;
+  margin: 0 0 30px;
+  line-height: 1.6;
+}
+
+.boton-claro {
+  background: white;
+  color: #171513;
+  border-color: white;
+}
+
+.boton-claro:hover {
+  background: transparent;
+  color: white;
+}
+
+.bajar {
+  position: absolute;
+  bottom: 30px;
+  left: 80px;
+  color: #ddd4c9;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.bajar span {
+  color: #c5a46d;
+  margin-left: 5px;
+}
+
+.carrusel-controles {
+  position: absolute;
+  bottom: 25px;
+  right: 50px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.carrusel-flecha {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.5);
+  background: rgba(8,7,6,0.4);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.carrusel-flecha:hover {
+  background: white;
+  color: #171513;
+}
+
+.carrusel-puntos {
+  display: flex;
+  gap: 8px;
+}
+
+.carrusel-puntos button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.carrusel-puntos button[aria-current="true"] {
+  background: white;
+}
+
+.presentacion {
+  width: 1080px;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.presentacion-foto {
+  width: 50%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.presentacion-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.presentacion-texto {
+  width: 50%;
+}
+
+.presentacion h2, .atajos h2 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+
+.presentacion-texto p {
+  color: #716d67;
+  font-size: 14px;
+  max-width: 420px;
+}
+
+.atajos {
+  background: #eeeae3;
+  padding: 60px 50px;
+  border-top: 1px solid #ded8ce;
+}
+
+.atajos h2 {
+  max-width: 1080px;
+  margin: 0 auto 30px;
+}
+
+.atajos-lista {
+  max-width: 600px;
+  margin: 0 auto;
+  border-top: 1px solid #c9c2b6;
+}
+
+.atajos-lista a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 5px;
+  border-bottom: 1px solid #c9c2b6;
+  text-decoration: none;
+  color: #171513;
+}
+
+.atajos-lista a span:first-child {
+  color: #92754c;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.atajos-lista a strong {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: normal;
+  flex: 1;
+}
+
+.atajos-lista a:hover strong {
+  color: #92754c;
+}
+
+/* Texto de especialidad a la derecha, tan grande como el texto principal */
+.portada-especialidad {
+  text-align: right;
+  color: #f8f5f0;
+  max-width: 450px;
+}
+
+.especialidad-titulo {
+  color: #c5a46d;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+
+.especialidad-nombre {
+  font-family: Georgia, serif;
+  font-size: 55px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.especialidad-y {
+  color: #b9b4ad;
+  font-size: 18px;
+  margin: 10px 0;
+}

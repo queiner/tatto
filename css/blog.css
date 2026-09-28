@@ -1,0 +1,84 @@
+.cabecera-pagina {
+  max-width: 680px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.cabecera-pagina h1 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.cabecera-pagina p {
+  color: #716d67;
+  font-size: 15px;
+  margin: 20px auto 0;
+}
+
+.articulo-blog {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.articulo-blog img {
+  width: 43%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.articulo-texto {
+  width: 57%;
+}
+
+.articulo-texto .numero {
+  color: #92754c;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.articulo-texto h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 10px 0 15px;
+}
+
+.articulo-texto p {
+  color: #716d67;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.blog-enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 60px;
+  border-top: 1px solid #d4cec4;
+  padding-top: 5px;
+}
+
+.blog-enlaces a {
+  width: calc(50% - 10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #d4cec4;
+  color: #171513;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.blog-enlaces a span {
+  color: #92754c;
+}
+
+.blog-enlaces a:hover {
+  color: #92754c;
+}

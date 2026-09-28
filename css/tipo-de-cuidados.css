@@ -1,0 +1,68 @@
+.cuidados-intro {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 55px;
+}
+
+.cuidados-intro img {
+  width: 42%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.cuidados-intro > div {
+  width: 58%;
+}
+
+.cuidados-intro h2, .cuidados-pasos h2 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 8px 0;
+}
+
+.cuidados-intro p, .cuidados-pasos p {
+  color: #716d67;
+  font-size: 14px;
+  margin: 0;
+}
+
+.cuidados-pasos {
+  border-top: 1px solid #d4cec4;
+}
+
+.cuidados-pasos article {
+  display: flex;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid #d4cec4;
+}
+
+.cuidados-pasos article > span {
+  color: #92754c;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  min-width: 55px;
+}
+
+.cuidados-pasos article > div {
+  flex: 1;
+}
+
+.aviso-cuidados {
+  margin: 30px 0;
+  padding: 18px 22px;
+  border-left: 2px solid #a58a62;
+  background: #ebe6dc;
+  color: #5e5951;
+  font-size: 13px;
+}
+
+.foto-sanacion {
+  width: 280px;
+  max-height: 360px;
+  margin: 45px auto 0;
+  object-fit: cover;
+  display: block;
+}

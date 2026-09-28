@@ -1,0 +1,60 @@
+.lista-consejos {
+  max-width: 850px;
+  margin: 0 auto;
+  border-top: 1px solid #d4cec4;
+}
+
+.lista-consejos article {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #d4cec4;
+}
+
+.lista-consejos article > span {
+  color: #92754c;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  min-width: 60px;
+}
+
+.lista-consejos article > div {
+  flex: 1;
+}
+
+.lista-consejos h2 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 5px;
+}
+
+.lista-consejos p {
+  color: #716d67;
+  font-size: 14px;
+  margin: 0;
+  max-width: 600px;
+}
+
+.consejos-final {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 850px;
+  margin: 50px auto 0;
+  padding: 20px;
+  background: #e9e4db;
+}
+
+.consejos-final img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.consejos-final p {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  flex: 1;
+  margin: 0;
+}
