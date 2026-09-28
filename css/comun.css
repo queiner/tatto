@@ -40,6 +40,71 @@ img {
   align-items: center;
   gap: 5px;
   border-top: 1px solid #1a1815;
+  position: relative;
+  min-height: 50px;
+}
+
+.menu-toggle-checkbox {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
+}
+
+.menu-icono,
+.menu-icono::before,
+.menu-icono::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #f8f7f5;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.menu-icono::before,
+.menu-icono::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.menu-icono::before {
+  top: -7px;
+}
+
+.menu-icono::after {
+  top: 7px;
+}
+
+.menu-toggle-checkbox:checked ~ .menu-toggle-label .menu-icono {
+  background: transparent;
+}
+
+.menu-toggle-checkbox:checked ~ .menu-toggle-label .menu-icono::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-toggle-checkbox:checked ~ .menu-toggle-label .menu-icono::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.barra-enlaces {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 .barra a {
@@ -135,9 +200,10 @@ img {
 }
 
 .pagina {
-  width: 1120px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 20px;
+  box-sizing: border-box;
 }
 
 .sobre-titulo {
@@ -168,9 +234,10 @@ img {
 /* Contenedor principal del footer */
 .pie-contenido {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1.2fr;
+  gap: 30px;
   margin-bottom: 40px;
+  align-items: start;
 }
 
 /* Sección del logo/eslogan */
@@ -218,6 +285,21 @@ img {
 
 .pie-seccion a:hover {
   color: #f8f5f0;
+}
+
+/* Horarios y ubicación */
+.pie-horarios li {
+  color: #b9b4ad;
+  font-size: 13px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.pie-ubicacion {
+  color: #b9b4ad;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* Sección de redes sociales */
@@ -326,4 +408,89 @@ img {
 .enlace-flecha span {
   color: #92754c;
   margin-left: 8px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .pagina {
+    padding: 40px 20px;
+  }
+
+  .pie-contenido {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .pagina {
+    padding: 30px 15px;
+  }
+
+  .menu-toggle-label {
+    display: block;
+  }
+
+  .barra-enlaces {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #050505;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 0;
+    border-top: 1px solid #1a1815;
+    z-index: 150;
+  }
+
+  .menu-toggle-checkbox:checked ~ .barra-enlaces {
+    display: flex;
+  }
+
+  .barra-enlaces a,
+  .barra-enlaces .desplegable summary {
+    padding: 12px 20px;
+    display: block;
+  }
+
+  .barra-enlaces .sub-menu {
+    position: static;
+    box-shadow: none;
+    background: #11100f;
+    min-width: auto;
+  }
+
+  .pie {
+    padding: 40px 25px 25px;
+  }
+
+  .pie-contenido {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .pie-abajo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .pagina {
+    padding: 20px 10px;
+  }
+
+  .pie {
+    padding: 30px 20px 20px;
+  }
+
+  .pie-contenido {
+    grid-template-columns: 1fr;
+  }
 }

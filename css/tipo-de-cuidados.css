@@ -3,6 +3,8 @@
   align-items: center;
   gap: 50px;
   margin-bottom: 55px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .cuidados-intro img {
@@ -13,6 +15,58 @@
 
 .cuidados-intro > div {
   width: 58%;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .cuidados-intro {
+    gap: 30px;
+  }
+
+  .cuidados-intro img {
+    height: 350px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .cuidados-intro {
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 20px;
+  }
+
+  .cuidados-intro img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .cuidados-intro > div {
+    width: 100%;
+  }
+
+  .cuidados-pasos article {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cuidados-pasos article > span {
+    min-width: auto;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .cuidados-intro img {
+    height: 250px;
+  }
+
+  .cuidados-intro h2,
+  .cuidados-pasos h2 {
+    font-size: 24px;
+  }
 }
 
 .cuidados-intro h2, .cuidados-pasos h2 {

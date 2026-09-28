@@ -1,5 +1,7 @@
 .estilos-lista {
   border-top: 1px solid #d4cec4;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .estilo {
@@ -22,6 +24,57 @@
 
 .estilo > div {
   width: 57%;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .estilo {
+    gap: 30px;
+  }
+
+  .estilo img {
+    height: 300px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .estilos-lista {
+    padding: 0 15px;
+  }
+
+  .estilo,
+  .estilo:nth-child(even) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .estilo img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .estilo > div {
+    width: 100%;
+  }
+
+  .estilo h2 {
+    font-size: 24px;
+  }
+
+  .cierre-estilos {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .estilo img {
+    height: 220px;
+  }
 }
 
 .estilo h2, .cierre-estilos > p {

@@ -6,6 +6,8 @@
   display: flex;
   align-items: center;
   gap: 60px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .mapa-dolor {
@@ -13,6 +15,7 @@
   margin: 0;
   padding: 18px;
   background: #fffaf3;
+  box-sizing: border-box;
 }
 
 .mapa-dolor img {
@@ -30,6 +33,47 @@
 
 .dolor-texto {
   width: 60%;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .dolor-contenido {
+    gap: 30px;
+  }
+
+  .dolor-texto h2 {
+    font-size: 26px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .dolor-contenido {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .mapa-dolor {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .dolor-texto {
+    width: 100%;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .dolor-texto h2 {
+    font-size: 22px;
+  }
+
+  .dolor-texto h3 {
+    font-size: 18px;
+  }
 }
 
 .dolor-texto h2, .dolor-texto h3 {

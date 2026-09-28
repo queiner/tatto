@@ -23,6 +23,8 @@
   display: flex;
   gap: 50px;
   align-items: flex-start;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .formulario {
@@ -130,4 +132,54 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .agenda-columnas {
+    gap: 30px;
+  }
+
+  .agenda .cabecera-pagina h1 {
+    font-size: 42px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .agenda .cabecera-pagina h1 {
+    font-size: 34px;
+  }
+
+  .agenda-columnas {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .formulario,
+  .solicitudes {
+    width: 100%;
+  }
+
+  .campos-par {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .campos-par > div {
+    width: 100%;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .agenda .cabecera-pagina h1 {
+    font-size: 28px;
+  }
+
+  .solicitudes {
+    padding: 20px 15px;
+  }
 }
